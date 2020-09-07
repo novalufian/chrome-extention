@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="hacker-list">
+        
+        <input class="search" />
+        <span class="sort" data-sort="name">Sort by name</span>
+        <span class="sort" data-sort="city">Sort by city</span>
+        
+        <ul class="list">
+            <li>
+                <h3 class="kly-name">Jonny</h3>
+            </li>
+            <li>
+                <h3 class="kly-name">Jonas</h3>
+            </li>
+        </ul>
+    </div>
+    
+    <script>
+        var options = {
+            valueNames: [ 'kly-name' ]
+        };
+        
+        var hackerList = new List('hacker-list', options);
+    </script>
+    
+</body>
+</html>
